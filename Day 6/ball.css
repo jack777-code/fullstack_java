@@ -1,0 +1,21 @@
+.ball{
+   width: 50px;
+   height: 50px;
+   background-color: purple;
+   border-radius: 50%;
+   border-end-start-radius: 5px solid blue;
+   animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(400px);
+    }
+
+    100%{
+        transform: translateY(50px);
+    }
+}
