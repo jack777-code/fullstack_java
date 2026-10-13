@@ -1,0 +1,65 @@
+let arr = [10, 20, 30, 40, 50]
+
+console.log(arr);
+var newvar = arr.map((x)=>{
+    return x + 0.5;
+})
+console.log(newvar)
+console.log(newvar)
+
+let emp = {
+    name : "cr7",
+    id : 7,
+    role : "footballer",
+    position : "Striker",
+    clubs : ["real madrid", "ManchesterUnited", "Juventus", "Alnassr"],
+    country: "portugal",
+//     teams  
+//    { city : "spain", city2 : "manchester"}
+
+    
+
+}
+console.log(emp.name);
+console.log(emp.clubs)
+
+// emp.teams.map((s)=>{
+//     console.log(teams)
+// })
+
+ emp.clubs.map((s)=>{
+    console.log(s)
+})
+console.log(Object.keys(emp));
+
+Object.seal(emp);
+emp.emal = "cr7@gmail.com"
+
+console.log(emp)
+console.log(Object.isFrozen(emp));
+console.log(Object.isSealed(emp));
+
+
+
+
+
+
+const a= 7 , b = 12, c = 24;
+if(a + b > c && b + c > a && c + b > a){
+    console.log("triangle")
+
+}
+else console.log("not a triangle");
+
+
+const n = 900
+if(n%4 === 0 && n%400 === 0){
+    console.log("leap")
+}
+else console.log("non-leap")
+
+
+// n = 19
+// if (n % 1 === 0 && n % n === 0){
+    
+// }
