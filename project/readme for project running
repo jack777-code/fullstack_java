@@ -1,0 +1,45 @@
+Things should do after installing the zip file of the project above
+there are 3 ways mentioned below
+1. just preview of ui immediately.
+2. installing zip and unfolding that in your local system.
+3. running the overall project in DOCKER FILE.
+====================================================================================================================================
+
+WAY-1.         LIVE PREVIEW.
+    CLICK the URL : disaster-relief-coordination-hub/src/main/resources/static/index.html
+        you can run this file for UI preview .
+====================================================================================================================================
+
+WAY-2. -----------------------------------------------------------------------------------
+
+1. unzip the disaster-relief-coordination-hub.zip
+                       │
+                       ▼
+2. double-click the "run.bat"
+                       │
+                       ▼
+3. Maven Wrapper (mvnw) automatically triggers:
+   ├── Reads pom.xml
+   ├── Automatically downloads Spring Boot 3.2.5, Embedded Tomcat, and H2 database
+   └── Compiles all 4 layers of your Java code
+                       │
+                       ▼
+4. Embedded Tomcat boots up on port 8080
+                       │
+                       ▼
+5. H2 in-memory database automatically creates tables & seeds data from data.sql
+                       │
+                       ▼
+6. Ready! User opens http://localhost:8080 in their browser
+
+===========================================================================================================================
+
+WAY - 3------- in ________________________________________DOCKER WAY______________________________________________________
+
+2.======if someone has DOCKER in their system you just download the zip file then after do this
+
+1.  docker compose up
+
+that's it the project can be viewed in "DOCKER CONTAINER" in the port => https://localhost:8080/
+
+=============================================================================================================================
